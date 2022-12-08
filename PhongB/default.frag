@@ -104,7 +104,7 @@ void main(){
 
 	FragColor = texture(tex0, texCoord) * lightColor * (diffuse + ambient + specular);
 	*/
-	//FragColor = pointLight();
-	//FragColor = direcLight();
-	FragColor = spotLight();
+	FragColor = pointLight();
+	FragColor += direcLight();
+	FragColor += spotLight();
 }
